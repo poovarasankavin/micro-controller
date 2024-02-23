@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: order
-        image: order-service:latest
+        image: poovarasans/micro-controller-order:latest
         ports:
         - containerPort: 8081
         # Add other necessary configuration (env variables, volumes, etc.)

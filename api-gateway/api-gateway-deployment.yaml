@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: api-gateway
-        image: <your-docker-hub-username>/api-gateway-service:latest
+        image: micro-controller-api-gateway:latest
         ports:
         - containerPort: 9001
