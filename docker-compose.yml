@@ -2,6 +2,7 @@ version: '3'
 services:
   api-gateway:
     build: ./api-gateway
+    image: your_registry/api-gateway:latest
     ports:
       - "9001:9001"
     depends_on:
@@ -10,10 +11,12 @@ services:
 
   order:
     build: ./order
+    image: your_registry/order:latest
     ports:
       - "8081:8081"
 
   payment:
     build: ./payment
+    image: your_registry/payment:latest
     ports:
       - "8082:8082"
